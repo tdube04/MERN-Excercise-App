@@ -10,7 +10,7 @@ const port = process.env.PORT | 5000;
 app.use(cors());
 app.use(express.json());
 
-
+// 'mongodb://localhost/exerciseDB'
 const uri = process.env.ATLAS_URI;
 mongoose.connect('mongodb://localhost/exerciseDB', {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true}
 );
